@@ -1,0 +1,36 @@
+.card{
+    width: 300px;
+    height: 450px;
+}
+.card-img-top{
+    height: 85%;
+}
+
+.cards .card .bandera{
+    right: -10px;
+    top: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.cards .card:hover .bandera{
+    opacity: 1;
+}
+
+.bandera_inicio {
+    width: 160px;
+    height: 0px;
+    border-top: 18px solid #13b955;
+    border-right: 20px solid #13b955;
+    border-left: 20px solid transparent;
+    border-bottom: 18px solid #13b955;
+}
+
+.bandera_punta{
+    width: 0px;
+    height: 0px;
+    border-top: 18px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid #13b955;
+    border-bottom: 18px solid transparent;    
+}
