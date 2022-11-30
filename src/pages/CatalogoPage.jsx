@@ -81,7 +81,7 @@ const Catalogo = () => {
                 </tbody>
               </table>
             </div>
-            <div className="trabMadera mx-5 mb-5 text-center">
+            <div className="trabMadera mb-5 text-center">
               <p>Propiedades Relativas para la Elaboración.</p>
               <table className="table border shadow">
                 <thead>
@@ -116,7 +116,7 @@ const Catalogo = () => {
                 </tbody>
               </table>
             </div>
-            <div className="propMadera mx-5 mb-5 text-center">
+            <div className="propMadera mb-5 text-center">
               <p>Propiedades Fisicas.</p>
               <table className="table border shadow">
                 <thead>
@@ -131,7 +131,7 @@ const Catalogo = () => {
                     </th>
                     <th scope="col">Carga unitaria de rotura (kPa)</th>
                     <th scope="col">Módulo de elasticidad (MPa)</th>
-                    <th scope="col">Direza transversal (Newtons)</th>
+                    <th scope="col">Dureza transversal (Newtons)</th>
                   </tr>
                 </thead>
                 <tbody>
