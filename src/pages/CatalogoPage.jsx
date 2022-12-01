@@ -42,7 +42,7 @@ const Catalogo = () => {
               Caracteristicas Tecnicas.
             </label>
             <select
-              className="form-select  minwidth"
+              className="form-select minwidth"
               id="Select1"
               name="Select1"
               value="Select1"
