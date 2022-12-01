@@ -20,7 +20,7 @@ const Servicios = () => {
             initial={{ x: 150, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 1 }}
-            className="text-center fw-light my-3 text-white"
+            className="text-center fw-light my-3 text-white px-5"
           >
             Fletes, maquilado, estufado, instalacion y todo lo que necesites lo
             encuentras con nosotros.
@@ -42,7 +42,6 @@ const Servicios = () => {
             titulo="Abasto seguro y continuo"
             texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint adipisci, dolore voluptates minus natus iusto voluptas velsaepe error rerum ex ad, eaque necessitatibus neque numquam eiusaccusamus rem. In suscipit earum placeat quibusdam teneturvoluptates ea ab cum eius odio est fugiat perspiciatis liberoculpa, saepe deserunt consequuntur."
           ></CardGeneral>
-
           <CardGeneral
             imagen="fa-solid fa-clipboard"
             titulo="Calidad al Cliente"

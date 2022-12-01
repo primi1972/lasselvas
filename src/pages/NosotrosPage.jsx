@@ -31,7 +31,7 @@ const Nosotros = () => {
           transition={{ delay: 0.6, duration: 1 }}
           className="mision-vision text-white d-flex w-90 my-5 gap-4 justify-content-center flex-wrap"
         >
-          <div className="mision minwidth w-25">
+          <div className="mision minwidth w-25 py-5">
             <h3 className="text-center pb-2">Misión</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
@@ -43,7 +43,7 @@ const Nosotros = () => {
               similique?
             </p>
           </div>
-          <div className="vision minwidth w-25">
+          <div className="vision minwidth w-25 py-5">
             <h3 className="text-center pb-2">Visión</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -55,7 +55,7 @@ const Nosotros = () => {
               quisquam! Saepe, aperiam.
             </p>
           </div>
-          <div className="valores minwidth w-45">
+          <div className="valores minwidth w-45 py-5">
             <h3 className="text-center pb-2">Valores</h3>
             <div className="valores d-flex gap-3">
               <div>
