@@ -2,7 +2,7 @@ import "./App.css";
 import { Fragment } from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import "./styles/bootstrap.min-pulse.css";
-import Header from "./components/header";
+import Header from "./components/Header";
 import InicioPage from "./pages/InicioPage";
 import NosotrosPage from "./pages/NosotrosPage";
 import MaderasPage from "./pages/MaderasPage";
@@ -14,7 +14,7 @@ import CatalogoPage from "./pages/CatalogoPage";
 import ContactoPage from "./pages/ContactoPage";
 import NoFoundPage from "./pages/NoFoundPage";
 import HistoriaPage from './pages/HistoriaPage'
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 
 function App() {

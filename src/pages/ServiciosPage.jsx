@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Banner1 from "../assets/Servicios/bg.jpg";
-import CardGeneral from "../components/cards";
+import CardGeneral from "../components/Cards";
 
 const Servicios = () => {
   return (
