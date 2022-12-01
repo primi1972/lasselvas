@@ -118,6 +118,11 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
+            <form action="" className="form-floating d-flex">
+              <input type="number" className="form-control ms-2" style={{height: "20px", width: "100px"}}/>
+              <button className="btn btn-success mx-1">mts</button>
+              <button className="btn btn-success">pies</button>
+            </form>
           </div>
         </nav>
       </header>
