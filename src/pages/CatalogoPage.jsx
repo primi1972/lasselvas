@@ -39,7 +39,7 @@ const Catalogo = () => {
         <div className="seleccionMadera mb-5 mx-auto" style={{width: "350px"}}>
           <div className="form-group">
             <label htmlFor="Select1" className="form-label mt-4">
-              Selecciona un Elemento
+              Caracteristicas Tecnicas.
             </label>
             <select
               className="form-select  minwidth"
@@ -49,7 +49,7 @@ const Catalogo = () => {
               onChange={seleccionMadera}
               selectedIndex={0}
             >
-              <option value={-1}>Seleccione: </option>
+              <option value={-1}>Madera </option>
               {madera.map((item) => (
                 <option key={item.id}>{item.MADERA}</option>
               ))

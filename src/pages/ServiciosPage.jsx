@@ -22,8 +22,7 @@ const Servicios = () => {
             transition={{ delay: 0.4, duration: 1 }}
             className="text-center fw-light my-3 text-white px-5"
           >
-            Fletes, maquilado, estufado, instalacion y todo lo que necesites lo
-            encuentras con nosotros.
+            Fletes, maquilado, estufado, instalacion y todo lo que necesite lo encuentras con nosotros.
           </motion.h5>
         </div>
         <div className="text-white d-flex w-90 my-5 gap-4 justify-content-center flex-wrap">
