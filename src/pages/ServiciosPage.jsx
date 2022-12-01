@@ -9,7 +9,7 @@ const Servicios = () => {
       <section className="d-flex justify-content-center maxwidth align-items-start flex-wrap py-5 mx-auto">
         <div className="titulo w-100">
           <motion.h1
-            initial={{ x: 150, opacity: 0 }}
+            initial={{ x: -150, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 1 }}
             className="text-success text-uppercase text-center"
@@ -17,7 +17,7 @@ const Servicios = () => {
             Servicios
           </motion.h1>
           <motion.h5
-            initial={{ x: -150, opacity: 0 }}
+            initial={{ x: 150, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 1 }}
             className="text-center fw-light my-3 text-white"
