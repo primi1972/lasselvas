@@ -28,11 +28,7 @@ window.addEventListener("scroll", function () {
 });
 
 const Header = () => {
-
   var [Valor, setValor] = useState(0);
-
-  
-
 
   return (
     <Fragment>
@@ -145,22 +141,26 @@ const Header = () => {
             className="menuOcultar1 form d-flex ms-3 p-2 bg-success shadow"
             style={{ width: "300px" }}
           >
-            <input type="number" name="number" className="form-control ms-2" onChange={(e) => {
-             
-              setValor(e.target.value);
-              console.log(Valor);
-            }}/>
+            <input
+              type="number"
+              name="number"
+              className="form-control ms-2"
+              onChange={(e) => {
+                setValor(e.target.value);
+              }}
+            />
             <div
               onClick={() => {
                 function Metros(numero) {
-                  if (numero != null) {
-                    //SI ES DIFERENTE DE NULL
-                    return((3.28084 * parseFloat(numero)).toFixed(2)) ;
-                  }
+                  if (numero != null)
+                    return (3.28084 * parseFloat(numero)).toFixed(2);
                 }
-                toast.success(`${Valor} pies = ${Metros(Valor)} mts`, {
-                  className: "bg-primary fs-3 text-white shadow",
-                });
+                toast.success(
+                  `${parseFloat(Valor).toFixed(2)} pies = ${Metros(Valor)} mts`,
+                  {
+                    className: "bg-primary fs-4 text-white shadow",
+                  }
+                );
               }}
               className="btn btn-success mx-1"
             >
@@ -169,14 +169,15 @@ const Header = () => {
             <div
               onClick={() => {
                 function Metros(numero) {
-                  if (numero != null) {
-                    //SI ES DIFERENTE DE NULL
-                    return((0.3048 * parseFloat(numero)).toFixed(2)) ;
-                  }
+                  if (numero != null)
+                    return (0.3048 * parseFloat(numero)).toFixed(2);
                 }
-                toast.success(`${Valor} mts = ${Metros(Valor)} pies`, {
-                  className: "bg-primary fs-3 text-white shadow",
-                });
+                toast.success(
+                  `${parseFloat(Valor).toFixed(2)} mts = ${Metros(Valor)} pies`,
+                  {
+                    className: "bg-primary fs-4 text-white shadow",
+                  }
+                );
               }}
               className="btn btn-success"
             >
