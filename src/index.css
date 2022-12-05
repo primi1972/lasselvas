@@ -66,8 +66,8 @@ a {
   width: 90%;
 }
 
-.zindex1000 {
-  z-index: 1000;
+.zindex-10 {
+  z-index: 10;
 }
 
 .pad-pag {

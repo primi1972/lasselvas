@@ -47,7 +47,6 @@ const Catalogo = () => {
               name="Select1"
               value="Select1"
               onChange={seleccionMadera}
-              selectedIndex={0}
             >
               <option value={-1}>Madera </option>
               {madera.map((item) => (

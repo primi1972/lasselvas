@@ -1,23 +1,28 @@
-.card{
+.tarjeta{
     width: 300px;
-    height: 450px;
+    height: 500px;
+    position: relative;
 }
-.card-img-top{
+.tarjeta img{
     height: 85%;
+    object-fit: cover;
+    width: 100%;
 }
 
-.cards .card .bandera{
+.tarjeta .bandera{
     right: -10px;
     top: 10px;
     opacity: 0;
     transition: 1s;
+    position: absolute;
+
 }
 
-.cards .card:hover .bandera{
+.tarjeta:hover .bandera{
     opacity: 1;
 }
 
-.bandera_inicio {
+.tarjeta .bandera_inicio {
     width: 160px;
     height: 0px;
     border-top: 18px solid #13b955;
@@ -26,11 +31,15 @@
     border-bottom: 18px solid #13b955;
 }
 
-.bandera_punta{
+.tarjeta .bandera_punta{
     width: 0px;
     height: 0px;
     border-top: 18px solid transparent;
     border-right: 20px solid transparent;
     border-left: 20px solid #13b955;
     border-bottom: 18px solid transparent;    
+}
+
+.tarjeta .titulo{
+    text-decoration: none !important;
 }

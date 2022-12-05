@@ -23,7 +23,7 @@ const Maderas = () => {
           </h5>
         </div>
 
-        <div className="cards d-flex flex-wrap justify-content-center">
+        <div className="d-flex flex-wrap justify-content-center">
           <NavLink to="/maderasDetalle/1">
             <motion.div
               initial={{ y: 100, opacity: 0 }}

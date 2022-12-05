@@ -1,33 +1,43 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
+
 import "../styles/header.css";
 import Logo from "../assets/header/logo.png";
 
 var scrollPos = 0;
 window.addEventListener("scroll", function () {
-  var menu = document.querySelector("#menuOcultar");
+  var menu = document.querySelector(".menuOcultar");
+  var menu1 = document.querySelector(".menuOcultar1");
   var flechaArriba = document.querySelector(".flechaArriba");
 
   if (window.pageYOffset > scrollPos) {
     menu.classList.add("ocultar");
     menu.classList.remove("mostrar");
+    menu1.classList.add("ocultar");
+    menu1.classList.remove("mostrar");
     flechaArriba.classList.remove("ocultarFlecha");
   } else {
     menu.classList.remove("ocultar");
     menu.classList.add("mostrar");
+    menu1.classList.remove("ocultar");
+    menu1.classList.add("mostrar");
     flechaArriba.classList.add("ocultarFlecha");
   }
   scrollPos = window.pageYOffset;
 });
 
 const Header = () => {
+
+  var [Valor, setValor] = useState(0);
+
+  
+
+
   return (
     <Fragment>
-      <header className="position-fixed w-100 zindex1000">
-        <nav
-          className="navbar navbar-expand-lg bg-white d-flex minwidth px-5 py-1 shadow mostrar"
-          id="menuOcultar"
-        >
+      <header className="position-fixed w-100 zindex-10">
+        <nav className="menuOcultar navbar navbar-expand-lg bg-white d-flex minwidth px-5 py-1 shadow mostrar">
           <img src={Logo} alt="" className="navbar-brand logo" />
           <button
             className="navbar-toggler"
@@ -73,17 +83,26 @@ const Header = () => {
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <NavLink className="dropdown-item text-decoration-none" to="/maderas">
+                    <NavLink
+                      className="dropdown-item text-decoration-none"
+                      to="/maderas"
+                    >
                       Maderas
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item text-decoration-none" to="/pisos">
+                    <NavLink
+                      className="dropdown-item text-decoration-none"
+                      to="/pisos"
+                    >
                       Pisos
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item text-decoration-none" to="/tarimas">
+                    <NavLink
+                      className="dropdown-item text-decoration-none"
+                      to="/tarimas"
+                    >
                       Tarimas
                     </NavLink>
                   </li>
@@ -118,11 +137,62 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
-            <form action="" className="form-floating d-flex">
-              <input type="number" className="form-control ms-2" style={{height: "20px", width: "100px"}}/>
-              <button className="btn btn-success mx-1">mts</button>
-              <button className="btn btn-success">pies</button>
-            </form>
+          </div>
+        </nav>
+        <nav>
+          <form
+            action=""
+            className="menuOcultar1 form d-flex ms-3 p-2 bg-success shadow"
+            style={{ width: "300px" }}
+          >
+            <input type="number" name="number" className="form-control ms-2" onChange={(e) => {
+             
+              setValor(e.target.value);
+              console.log(Valor);
+            }}/>
+            <div
+              onClick={() => {
+                function Metros(numero) {
+                  if (numero != null) {
+                    //SI ES DIFERENTE DE NULL
+                    return((3.28084 * parseFloat(numero)).toFixed(2)) ;
+                  }
+                }
+                toast.success(`${Valor} pies = ${Metros(Valor)} mts`, {
+                  className: "bg-primary fs-3 text-white shadow",
+                });
+              }}
+              className="btn btn-success mx-1"
+            >
+              mts
+            </div>
+            <div
+              onClick={() => {
+                function Metros(numero) {
+                  if (numero != null) {
+                    //SI ES DIFERENTE DE NULL
+                    return((0.3048 * parseFloat(numero)).toFixed(2)) ;
+                  }
+                }
+                toast.success(`${Valor} mts = ${Metros(Valor)} pies`, {
+                  className: "bg-primary fs-3 text-white shadow",
+                });
+              }}
+              className="btn btn-success"
+            >
+              pies
+            </div>
+            <div>
+              <button
+                type="button"
+                className="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+          </form>
+          <div>
+            <Toaster position="top-center" />
           </div>
         </nav>
       </header>
