@@ -5,7 +5,7 @@ const Contacto = () => {
   return (
     <Fragment>
       <section className="pad-pag maxwidth mx-auto mb-5">
-        <h1 className="text-success text-uppercase text-center mb-5">
+        <h1 className="text-success text-uppercase text-center my-5">
           Contacto
         </h1>
         <div className="d-flex mx-2 gap-4 justify-content-center flex-wrap">

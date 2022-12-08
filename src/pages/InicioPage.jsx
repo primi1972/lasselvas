@@ -39,6 +39,7 @@ const Inicio = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
               className="btn btn-success fs-5 mx-auto botonHistoria"
+              onClick ={() => window.scrollTo(0, 0)}
             >
               Historia...
             </motion.button>
@@ -79,7 +80,7 @@ const Inicio = () => {
               Somos una empresa con mas de 100 años en el mercado, con un solo
               objetivo <b>Calidad</b>.
             </p>
-            <NavLink to="/nosotros" className="btn btn-success fs-5 mx-auto">
+            <NavLink to="/nosotros" className="btn btn-success fs-5 mx-auto" onClick ={() => window.scrollTo(0, 0)}>
               Leer Mas...
             </NavLink>
           </motion.div>
@@ -95,7 +96,7 @@ const Inicio = () => {
               Fletes, maquilado, estufado, instalación y todo lo que necesites
               lo encuentras con nosotros.
             </p>
-            <NavLink to="/servicios" className="btn btn-success fs-5 mx-auto">
+            <NavLink to="/servicios" className="btn btn-success fs-5 mx-auto" onClick ={() => window.scrollTo(0, 0)}>
               Leer Mas...
             </NavLink>
           </motion.div>
@@ -111,7 +112,7 @@ const Inicio = () => {
               Estamos para apoyarte ponte en contacto y con gusto te
               atenderemos.
             </p>
-            <NavLink to="/contacto" className="btn btn-success fs-5 mx-auto">
+            <NavLink to="/contacto" className="btn btn-success fs-5 mx-auto" onClick ={() => window.scrollTo(0, 0)}>
               Leer Mas...
             </NavLink>
           </motion.div>

@@ -6,7 +6,7 @@ const Servicios = () => {
   return (
     <div className="fondo_obscuro">
       <img src={Banner1} className="banner1" alt="" />
-      <section className="d-flex justify-content-center maxwidth align-items-start flex-wrap py-5 mx-auto">
+      <section className="d-flex justify-content-center maxwidth align-items-start flex-wrap py-5 mx-auto border-bottom border-success">
         <div className="titulo w-100">
           <motion.h1
             initial={{ x: -150, opacity: 0 }}

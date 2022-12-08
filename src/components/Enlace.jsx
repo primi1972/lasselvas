@@ -6,8 +6,9 @@ const Enlace = ({nombre = 'inicio', enlace = '/'}) => {
     <NavLink
       className="nav-link fs-5 d-flex flex-column"
       to={enlace}
-      onClick={() =>
-        document.querySelector(".navbar-collapse").classList.remove("show")
+      onClick={() =>{
+        document.querySelector(".navbar-collapse").classList.remove("show");
+        window.scrollTo(0, 0)}
       }
     >
       {nombre}

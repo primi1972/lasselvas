@@ -36,7 +36,7 @@ const Catalogo = () => {
     <Fragment>
 
       <section className="pad-pag catalogoMaderas maxwidth mx-auto">
-        <h1 className="text-center text-success">CATALOGO</h1>
+        <h1 className="text-center text-success mt-5">CATALOGO</h1>
         <div className="seleccionMadera mb-5 mx-auto" style={{width: "350px"}}>
           <div className="form-group">
             <label htmlFor="Select1" className="form-label mt-4">

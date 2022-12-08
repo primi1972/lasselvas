@@ -29,15 +29,18 @@ const Maderas = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 1 }}
+              onClick ={() => window.scrollTo(0, 0)}
             >
               <CardMadera imagen={Mad1} titulo="Alamo Blanco" />
             </motion.div>
           </NavLink>
+          
           <NavLink to="/maderasDetalle/2">
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 1 }}
+              onClick ={() => window.scrollTo(0, 0)}
             >
               <CardMadera imagen={Mad2} titulo="Alamo" />
             </motion.div>
@@ -47,6 +50,7 @@ const Maderas = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.2, duration: 1 }}
+              onClick ={() => window.scrollTo(0, 0)}
             >
               <CardMadera imagen={Mad3} titulo="Olmo" />
             </motion.div>
@@ -56,6 +60,7 @@ const Maderas = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.6, duration: 1 }}
+              onClick ={() => window.scrollTo(0, 0)}
             >
               <CardMadera imagen={Mad4} titulo="Pino Blanco" />
             </motion.div>

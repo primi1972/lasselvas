@@ -131,9 +131,7 @@ const Header = () => {
         </nav>
         <div>
           <a
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
+            onClick={() => window.scrollTo(0, 0)}
             className="ocultarFlecha fa-solid fa-chevron-up fa-2xl flechaArriba position-fixed shadow rounded-circle d-flex justify-content-center align-items-center bg-primary text-white text-decoration-none"
           ></a>
           <a className="fa-brands fa-whatsapp fa-2xl iconWhatsapp position-fixed shadow rounded-circle d-flex justify-content-center align-items-center text-decoration-none"></a>

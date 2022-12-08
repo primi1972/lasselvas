@@ -9,9 +9,10 @@ export default function SliderMaderas(props) {
     document.getElementById("imgPrincipal").src = e.target.src;
   }
 
-  Imagenes.forEach((data) => {
+  Imagenes.forEach((data, index) => {
     elementosImg.push(
       <img
+        key = { index }
         onClick={clickImagen}
         src={data}
         alt=""
@@ -21,6 +22,11 @@ export default function SliderMaderas(props) {
       />
     );
   });
+
+  // window.addEventListener('DOMContentLoaded', (event) => {
+  //   console.log('page is fully loaded');
+  //   window.scrollTo(0, 0);
+  // });
 
   return (
       <div className="slidermadera d-flex gap-4 flex-wrap">
@@ -52,7 +58,7 @@ export default function SliderMaderas(props) {
                 </tr>
                 <tr>
                   <th scope="row">Ancho</th>
-                  <td colspan="2">{props.ancho}</td>
+                  <td>{props.ancho}</td>
                 </tr>
               </tbody>
             </table>
