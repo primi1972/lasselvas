@@ -10,7 +10,7 @@ export default function HistoriaPage() {
   return (
     <Fragment>
       <img src={Banner1} className="banner1" alt="" />
-      <section className="d-flex justify-content-center align-items-center flex-wrap flex-column my-5 px-5 maxwidth mx-auto">
+      <section className="d-flex justify-content-center align-items-center flex-wrap flex-column my-5 maxwidth mx-auto">
         <h1 className="text-success text-uppercase text-center">Historia</h1>
 
         <TextoHistoria

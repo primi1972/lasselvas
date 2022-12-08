@@ -1,3 +1,16 @@
-.elementosImg{
+.slidermadera .miniaturas{
     cursor:pointer;
+}
+
+
+
+@media (max-width: 960px){
+    .slidermadera .imgPrincipal{
+        width: 300px;
+        height: 300px;
+    }
+    .slidermadera .miniaturas{
+        width: 50px;
+        height: 50px;
+    }
 }

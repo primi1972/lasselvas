@@ -1,53 +1,70 @@
-.logo{
+header .logo {
   height: 120px;
 }
 
-.lineamenu{
-    width: 0;
-    transition: width 500ms;
+header .lineamenu {
+  width: 0;
+  transition: width 500ms;
+}
+a:hover .lineamenu {
+  width: 100%;
+}
+
+header .flechaArriba {
+  cursor: pointer;
+  bottom: 120px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+
+header .flechaArriba:hover {
+  transform: scale(1.3);
+}
+
+header .iconWhatsapp {
+  cursor: pointer;
+  bottom: 50px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  transition: 500ms;
+}
+
+header .iconWhatsapp:hover {
+  transform: scale(1.3);
+  background-color: #24e100;
+}
+
+header .ocultar {
+  transform: translateY(-130px);
+  transition: 500ms;
+}
+header .mostrar {
+  transform: translateY(0px);
+  transition: 500ms;
+}
+header .ocultarFlecha {
+  transform: scale(0);
+  transition: 500ms;
+}
+
+header .menuOcultar1 {
+  width: 250px;
+}
+
+@media (max-width: 960px) {
+  header form .btn{
+    font-size: 0.8rem;
   }
-  a:hover .lineamenu{
-    width: 100%;
-    
+
+  header .form-control{
+    font-size: 0.8rem;
   }
-  
-.flechaArriba{
-    cursor: pointer;
-    bottom:120px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    transition: 1s;
+
+  header .menuOcultar1 {
+    width: 200px;
   }
-  
-  .flechaArriba:hover{
-    transform: scale(1.3);
-  }
-  
-  .iconWhatsapp{
-    cursor: pointer;
-    bottom:50px;
-    right: 30px; 
-    width: 50px;
-    height: 50px;
-    background-color: #25D366;
-    transition: 500ms;
-  }
-  
-  .iconWhatsapp:hover{
-    transform: scale(1.3);
-    background-color: #24E100;
-  }
-  
-  .ocultar{
-    transform: translateY(-130px);
-    transition: 500ms;
-  }
-  .mostrar{
-    transform: translateY(0px);
-    transition: 500ms;
-  }
-  .ocultarFlecha{
-    transform: scale(0);
-    transition: 500ms;
-  }
+}

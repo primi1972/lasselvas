@@ -34,6 +34,7 @@ const Catalogo = () => {
 
   return (
     <Fragment>
+
       <section className="pad-pag catalogoMaderas maxwidth mx-auto">
         <h1 className="text-center text-success">CATALOGO</h1>
         <div className="seleccionMadera mb-5 mx-auto" style={{width: "350px"}}>
@@ -60,8 +61,8 @@ const Catalogo = () => {
         {selector.map((item) => (
           <div className="repintar mx-5" key={item.id}>
             <h3 className="text-center">{item.MADERA}</h3>
-            <p className="text-center m-5">{item.DESC}</p>
-            <div className="usoMadera mx-5 mb-5">
+            <p className="descripcion text-center m-5">{item.DESC}</p>
+            <div className="usoMadera mb-5">
               <table className="table border shadow">
                 <thead>
                   <tr className="bg-success text-white">
@@ -119,7 +120,7 @@ const Catalogo = () => {
               <p>Propiedades Fisicas.</p>
               <table className="table border shadow">
                 <thead>
-                  <tr className="bg-success text-white">
+                  <tr className="bg-success text-white ">
                     <th scope="col">Peso especifico (12%h)</th>
                     <th scope="col">
                       Peso Promedio de embbarque kg/m3 sec. al aire.

@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
+import Enlace from "../components/Enlace";
 
 import "../styles/header.css";
 import Logo from "../assets/header/logo.png";
@@ -51,21 +52,8 @@ const Header = () => {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <NavLink className="nav-link fs-5 d-flex flex-column" to="/">
-                  Inicio
-                  <span className="lineamenu border-top border-success border-3"></span>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link fs-5 d-flex flex-column"
-                  to="/nosotros"
-                >
-                  Nosotros
-                  <span className="lineamenu border-top border-success border-3"></span>
-                </NavLink>
-              </li>
+              <Enlace />
+              <Enlace nombre="Nosotros" enlace="/nosotros" />
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle fs-5"
@@ -78,60 +66,14 @@ const Header = () => {
                   Productos
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <NavLink
-                      className="dropdown-item text-decoration-none"
-                      to="/maderas"
-                    >
-                      Maderas
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item text-decoration-none"
-                      to="/pisos"
-                    >
-                      Pisos
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item text-decoration-none"
-                      to="/tarimas"
-                    >
-                      Tarimas
-                    </NavLink>
-                  </li>
+                  <Enlace nombre="Maderas" enlace="/maderas" />
+                  <Enlace nombre="Pisos" enlace="/pisos" />
+                  <Enlace nombre="Tarimas" enlace="/tarimas" />
                 </ul>
               </li>
-              <li className="nav-item dropdown"></li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link fs-5 d-flex flex-column"
-                  to="/servicios"
-                >
-                  Servicios
-                  <span className="lineamenu border-top border-success border-3"></span>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link fs-5 d-flex flex-column"
-                  to="/catalogo"
-                >
-                  Catalogo
-                  <span className="lineamenu border-top border-success border-3"></span>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link fs-5 d-flex flex-column"
-                  to="/contacto"
-                >
-                  Contacto
-                  <span className="lineamenu border-top border-success border-3"></span>
-                </NavLink>
-              </li>
+              <Enlace nombre="Servicios" enlace="/servicios" />
+              <Enlace nombre="Catalogo" enlace="/catalogo" />
+              <Enlace nombre="Contacto" enlace="/contacto" />
             </ul>
           </div>
         </nav>
@@ -139,7 +81,6 @@ const Header = () => {
           <form
             action=""
             className="menuOcultar1 form d-flex ms-3 p-2 bg-success shadow"
-            style={{ width: "300px" }}
           >
             <input
               type="number"
@@ -183,30 +124,21 @@ const Header = () => {
             >
               pies
             </div>
-            <div>
-              <button
-                type="button"
-                className="btn-close btn-close-white me-2 m-auto"
-                data-bs-dismiss="toast"
-                aria-label="Close"
-              ></button>
-            </div>
           </form>
           <div>
             <Toaster position="top-center" />
           </div>
         </nav>
+        <div>
+          <a
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="ocultarFlecha fa-solid fa-chevron-up fa-2xl flechaArriba position-fixed shadow rounded-circle d-flex justify-content-center align-items-center bg-primary text-white text-decoration-none"
+          ></a>
+          <a className="fa-brands fa-whatsapp fa-2xl iconWhatsapp position-fixed shadow rounded-circle d-flex justify-content-center align-items-center text-decoration-none"></a>
+        </div>
       </header>
-
-      <div>
-        <a
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
-          className="ocultarFlecha fa-solid fa-chevron-up fa-2xl flechaArriba position-fixed shadow rounded-circle d-flex justify-content-center align-items-center bg-primary text-white text-decoration-none"
-        ></a>
-        <a className="fa-brands fa-whatsapp fa-2xl iconWhatsapp position-fixed shadow rounded-circle d-flex justify-content-center align-items-center text-decoration-none"></a>
-      </div>
     </Fragment>
   );
 };

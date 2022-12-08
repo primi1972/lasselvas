@@ -1,5 +1,6 @@
 .texto-historia .texto{
     position: relative;
+    transform: rotate(20deg);
 }
 
 .texto-historia .texto img{
@@ -8,4 +9,34 @@
     width: 100%;
     z-index: -1;
     object-fit:cover;
+}
+
+.texto-historia .postal{
+    position: relative;
+    background: #4D494C radial-gradient(
+        #fff 0px,
+        #fff 7px,
+        transparent
+    );
+    background-size: 20px 20px;
+    background-position: -10px;
+    width: 360px;
+    height: 480px;
+    z-index: -1;
+}
+
+.texto-historia .postal::before{
+    content: "";
+    position: absolute;
+    inset: 20px;
+    background: url(../assets/historia/medalla.jpg);
+    background-size:cover;
+    box-shadow: 0 0 0 10px #4D494C;
+}
+
+@media (max-width: 960px){
+    .texto-historia .texto{
+        transform: rotate(0deg);
+        margin: 0px 10px;
+    }
 }
