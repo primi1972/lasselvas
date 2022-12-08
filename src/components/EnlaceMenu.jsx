@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Enlace = ({nombre = 'inicio', enlace = '/'}) => {
+const Enlace = ({nombre = 'Inicio', enlace = '/'}) => {
   return(
     <li className="nav-item">
     <NavLink

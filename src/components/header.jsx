@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
-import Enlace from "../components/Enlace";
+import Enlace from "./EnlaceMenu";
 
 import "../styles/header.css";
 import Logo from "../assets/header/logo.png";
@@ -52,7 +52,7 @@ const Header = () => {
             id="navbarNav"
           >
             <ul className="navbar-nav">
-              <Enlace />
+              <Enlace nombre="Inicio" enlace="/"/>
               <Enlace nombre="Nosotros" enlace="/nosotros" />
               <li className="nav-item dropdown">
                 <NavLink

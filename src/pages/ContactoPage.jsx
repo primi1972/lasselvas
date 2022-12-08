@@ -13,9 +13,9 @@ const Contacto = () => {
             className="minwidth w-45 shadow"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5291650469294!2d-99.1243274847551!3d19.43273908688422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1feb53f8a95e3%3A0x138fa40c24e08650!2sMadereria%20Las%20Selvas%2C%20SA%20de%20CV!5e0!3m2!1ses-419!2smx!4v1667706131697!5m2!1ses-419!2smx"
             height="550px"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -34,7 +34,7 @@ const Contacto = () => {
                   id="floatingInput"
                   required
                 />
-                <label for="floatingInput" className="text-primary ms-4">
+                <label htmlFor="floatingInput" className="text-primary ms-4">
                   Correo
                 </label>
               </div>
@@ -48,7 +48,7 @@ const Contacto = () => {
                   id="floatingInput"
                   required
                 />
-                <label for="floatingInput" className="text-primary ms-4">
+                <label htmlFor="floatingInput" className="text-primary ms-4">
                   Nombre
                 </label>
               </div>
@@ -61,7 +61,7 @@ const Contacto = () => {
                   placeholder="Enter direccion"
                   id="floatingInput"
                 />
-                <label for="floatingInput" className="text-primary ms-4">
+                <label htmlFor="floatingInput" className="text-primary ms-4">
                   Dirección
                 </label>
               </div>
@@ -74,7 +74,7 @@ const Contacto = () => {
                   placeholder="Enter telefono"
                   id="floatingInput"
                 />
-                <label for="floatingInput" className="text-primary ms-4">
+                <label htmlFor="floatingInput" className="text-primary ms-4">
                   Telefono
                 </label>
               </div>
@@ -87,7 +87,7 @@ const Contacto = () => {
                   className="form-control"
                   id="floatingInput"
                 />
-                <label for="floatingInput" className="text-primary ms-4">
+                <label htmlFor="floatingInput" className="text-primary ms-4">
                   Comentarios
                 </label>
               </div>

@@ -1,6 +1,4 @@
 import { Fragment } from "react";
-import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
 
 import "../styles/MaderasPage.css";
 import Banner1 from "../assets/maderas/bg.jpg";
@@ -24,47 +22,12 @@ const Maderas = () => {
         </div>
 
         <div className="d-flex flex-wrap justify-content-center">
-          <NavLink to="/maderasDetalle/1">
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 1 }}
-              onClick ={() => window.scrollTo(0, 0)}
-            >
-              <CardMadera imagen={Mad1} titulo="Alamo Blanco" />
-            </motion.div>
-          </NavLink>
-          
-          <NavLink to="/maderasDetalle/2">
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.8, duration: 1 }}
-              onClick ={() => window.scrollTo(0, 0)}
-            >
-              <CardMadera imagen={Mad2} titulo="Alamo" />
-            </motion.div>
-          </NavLink>
-          <NavLink to="/maderasDetalle/3">
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.2, duration: 1 }}
-              onClick ={() => window.scrollTo(0, 0)}
-            >
-              <CardMadera imagen={Mad3} titulo="Olmo" />
-            </motion.div>
-          </NavLink>
-          <NavLink to="/maderasDetalle/4">
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.6, duration: 1 }}
-              onClick ={() => window.scrollTo(0, 0)}
-            >
-              <CardMadera imagen={Mad4} titulo="Pino Blanco" />
-            </motion.div>
-          </NavLink>
+
+          <CardMadera imagen={Mad1} titulo="Alamo Blanco" enlace= "/maderasDetalle/1" />
+          <CardMadera imagen={Mad2} titulo="Alamo" enlace= "/maderasDetalle/2" />
+          <CardMadera imagen={Mad3} titulo="Olmo" enlace= "/maderasDetalle/3" />
+          <CardMadera imagen={Mad4} titulo="Pino Blanco" enlace= "/maderasDetalle/4" />
+
         </div>
       </section>
     </Fragment>
